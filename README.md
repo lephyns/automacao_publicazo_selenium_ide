@@ -11,7 +11,7 @@ Os casos de teste estão dentro da pasta feature.
 
 # Como executar o projeto 📌
 
-**Passo 1:** nstalar extenção Selenium IDE<br>
+**Passo 1:** instalar extenção Selenium IDE<br>
 Para executar o projeto é necessário ter a extenção do **Selenium IDE** instalada no navegador. Link para download pelo <a href="https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?hl=pt-BR">Chrome<a/>.
 
 **Passo 2:** executar os testes do projeto<br>
