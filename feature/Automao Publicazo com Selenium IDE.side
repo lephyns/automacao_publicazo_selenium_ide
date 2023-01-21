@@ -1,0 +1,1495 @@
+{
+  "id": "8c3a3ef5-7ed8-4b74-a5ab-da1e47cfd042",
+  "version": "2.0",
+  "name": "Automação Publicazo com Selenium IDE",
+  "url": "http://publicazo.insprak.com/",
+  "tests": [{
+    "id": "cc184160-3102-4377-b604-342a0ccfd60b",
+    "name": "cadastrar_usuario_com_sucesso",
+    "commands": [{
+      "id": "4b0c8198-201e-44fa-a31e-9c3e32297709",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ff8f687-ddcb-47b3-aeeb-e07d4e7de864",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6872240-8a08-453a-9dbd-5f70e5d670d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.img-circle",
+      "targets": [
+        ["css=.img-circle", "css:finder"],
+        ["xpath=//img[@alt='Cee83551b697843eb76a2f3622fba2fc']", "xpath:img"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5572bbde-6f95-44cc-a9c1-b22125dbcb93",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=li:nth-child(14) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_out')]", "xpath:href"],
+        ["xpath=//li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21c65fb9-a9ee-4131-9b44-aa6fd6a673ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastre-se",
+      "targets": [
+        ["linkText=Cadastre-se", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastre-se')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_up')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastre-se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "328dcaef-8c1c-400e-b1f5-02c6de15cb7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Cadastre-se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1e8e6f8-bbd2-4562-afc1-b1ac6601a304",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Cadastre-se')]", "xpath:innerText"]
+      ],
+      "value": "Cadastre-se"
+    }, {
+      "id": "9d8f0a44-30c7-4c48-960e-ad0cc9407637",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_fullname",
+      "targets": [
+        ["id=user_fullname", "id"],
+        ["name=user[fullname]", "name"],
+        ["css=#user_fullname", "css:finder"],
+        ["xpath=//input[@id='user_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c3aa86c-b17d-4ac0-af43-03c23702d366",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_fullname",
+      "targets": [
+        ["id=user_fullname", "id"],
+        ["name=user[fullname]", "name"],
+        ["css=#user_fullname", "css:finder"],
+        ["xpath=//input[@id='user_fullname']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Reinaldo Peres"
+    }, {
+      "id": "2a1c2b71-ad7b-4e69-b124-294b3b533d17",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "912fa688-4e62-4133-869f-b06183e29017",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "reiiiipeeeeres@hotmail.com"
+    }, {
+      "id": "f6705fdd-08e2-41fb-b2e7-a8e5d79f9b85",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Teste@123"
+    }, {
+      "id": "56233ad1-08e4-483c-bc0d-9601d6b8d930",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_password_confirmation",
+      "targets": [
+        ["id=user_password_confirmation", "id"],
+        ["name=user[password_confirmation]", "name"],
+        ["css=#user_password_confirmation", "css:finder"],
+        ["xpath=//input[@id='user_password_confirmation']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c487780-14f2-4f20-a2db-8ff2d382604d",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password_confirmation",
+      "targets": [
+        ["id=user_password_confirmation", "id"],
+        ["name=user[password_confirmation]", "name"],
+        ["css=#user_password_confirmation", "css:finder"],
+        ["xpath=//input[@id='user_password_confirmation']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Teste@123"
+    }, {
+      "id": "6c527589-f957-48ae-9ef8-a9f97bf9cf37",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd82b457-7207-4955-a5dc-bb8ea65ca496",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toast-message",
+      "targets": [
+        ["css=.toast-message", "css:finder"],
+        ["xpath=//div[@id='toast-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bca71354-2afa-44a6-a390-19eea587581b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.img-circle",
+      "targets": [
+        ["css=.img-circle", "css:finder"],
+        ["xpath=//img[@alt='Fa64326d949e28dda8db922c6808ae51']", "xpath:img"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e06ee4-20d2-4646-b717-e28ae14d17b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=li:nth-child(14) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_out')]", "xpath:href"],
+        ["xpath=//li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc6ef99c-d7ca-45be-8015-6b956d7fc0d4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dc21098a-bc9a-4cbe-b7df-c721db0e98c8",
+    "name": "autenticar_no_sistema_com_sucesso",
+    "commands": [{
+      "id": "d266b75f-3ba8-42eb-9119-1ea4ad46ac10",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69074051-7388-4151-a14e-f59113103f43",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a83b24c-6082-4f0f-ba70-819e89af083d",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Publicazo Pesquise pelos melhores serviços na sua cidade.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40ed9b8b-b357-4abc-b629-a77dbf2808fc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Publicazo Pesquise pelos melhores serviços na sua cidade.')]", "xpath:innerText"]
+      ],
+      "value": "Publicazo Pesquise pelos melhores serviços na sua cidade."
+    }, {
+      "id": "3d727bb1-8abb-4561-bcb3-051968c527a1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Entrar",
+      "targets": [
+        ["linkText=Entrar", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Entrar')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_in')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a560fe22-e984-409a-9e53-a38fc4be6512",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "591670c3-e207-4fe2-bfc8-7c61f22c2cf1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": "Entrar"
+    }, {
+      "id": "1b3c7b2d-a2b1-4946-876a-4a8fed6d3953",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "424f606a-871b-410c-bf57-ce968e5b2166",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "198faddc-9fc1-4047-9b50-5093e47eb9c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "joaosilva@hotmail.com"
+    }, {
+      "id": "2978df0a-322d-4d68-9277-da4c1bd28338",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "378127f1-bf58-44d6-a9bf-d51ccb0c2563",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Teste@123"
+    }, {
+      "id": "41d448e4-4e7e-4ca5-b51b-83fc6474d827",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a567264-b887-4b84-87c3-36acbda865c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toast",
+      "targets": [
+        ["css=.toast", "css:finder"],
+        ["xpath=//div[@id='toast-container']/div", "xpath:idRelative"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c773e65-f6a4-4da8-8a08-b3eca5a37a0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.img-circle",
+      "targets": [
+        ["css=.img-circle", "css:finder"],
+        ["xpath=//img[@alt='Cee83551b697843eb76a2f3622fba2fc']", "xpath:img"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d04e817f-9baf-4466-afd1-7b7cdd0a75a8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=li:nth-child(14) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_out')]", "xpath:href"],
+        ["xpath=//li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9171cc67-8be0-4fce-ab1f-12a2332bac10",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3c748b3f-2df5-4fa9-ac27-ba8720b5658b",
+    "name": "pesquisar_por_serviço_com_sucesso",
+    "commands": [{
+      "id": "542e3358-88c5-4fbf-8f1d-90625679a668",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3acb7d2c-0980-459b-89cc-533bef3028e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9370fecd-eec4-4bf9-b8cb-75d801c91a57",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "658850df-a8e2-4792-8081-8b21c1a089ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "aulas de ingles"
+    }, {
+      "id": "420b61bf-75f6-4079-bad8-909cd3cbde34",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cef1eef-3590-4dcb-b454-34c9ce82fcc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(27) .panel-body",
+      "targets": [
+        ["css=.col-md-4:nth-child(27) .panel-body", "css:finder"],
+        ["xpath=//div[@id='service_listing']/div[14]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[14]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2f6a093-a8aa-4428-9a19-98f15527201f",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=aulas de inglês",
+      "targets": [
+        ["linkText=aulas de inglês", "linkText"],
+        ["css=.col-md-4:nth-child(27) a", "css:finder"],
+        ["xpath=//a[contains(text(),'aulas de inglês')]", "xpath:link"],
+        ["xpath=//div[@id='service_listing']/div[14]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/services/29')]", "xpath:href"],
+        ["xpath=//div[14]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'aulas de inglês')]", "xpath:innerText"]
+      ],
+      "value": "aulas de inglês"
+    }, {
+      "id": "8b19cf17-7f21-4572-b7bb-3e0b57ef9361",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "08ae5510-59d2-45fb-bfdf-f1780ee7a6f5",
+    "name": "despublicar_servico_com_sucesso",
+    "commands": [{
+      "id": "bc01b6f9-859d-4c77-8451-bd28452c5706",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41390b01-3a8d-41ad-874b-d129ad176d8b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04d1438f-84ef-4d78-82a4-b6ef7e64aaa4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crie seu Anúncio",
+      "targets": [
+        ["linkText=Crie seu Anúncio", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/services/new')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Crie seu Anúncio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59598d80-bd68-4a52-89d6-aabfce43db0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_service_category",
+      "targets": [
+        ["id=service_service_category", "id"],
+        ["name=service[service_category]", "name"],
+        ["css=#service_service_category", "css:finder"],
+        ["xpath=//select[@id='service_service_category']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d29bb01-3e8b-4dfc-8b6a-fef3d0f5a94e",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_service_category",
+      "targets": [],
+      "value": "label=Pessoal"
+    }, {
+      "id": "e417aac4-e255-4b92-bbe0-165340efa0ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_service_type",
+      "targets": [
+        ["id=service_service_type", "id"],
+        ["name=service[service_type]", "name"],
+        ["css=#service_service_type", "css:finder"],
+        ["xpath=//select[@id='service_service_type']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Selecione\nCabeleireira\nFaxineira\nEnfermeira\nProfessor\nGuia Turístico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62ae90c2-f315-4a19-8bac-ec96f02936cf",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_service_type",
+      "targets": [],
+      "value": "label=Cabeleireira"
+    }, {
+      "id": "2cbee472-0257-498f-804e-a29c442b4cc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_service_mode",
+      "targets": [
+        ["id=service_service_mode", "id"],
+        ["name=service[service_mode]", "name"],
+        ["css=#service_service_mode", "css:finder"],
+        ["xpath=//select[@id='service_service_mode']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Selecione\nEm Domicílio\nNo Estabelecimento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe062e9e-1497-4586-8bba-5428dd3fa8dd",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_service_mode",
+      "targets": [],
+      "value": "label=Em Domicílio"
+    }, {
+      "id": "88a27cc0-5831-49a4-b473-f39420128b42",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_payment_period",
+      "targets": [
+        ["id=service_payment_period", "id"],
+        ["name=service[payment_period]", "name"],
+        ["css=#service_payment_period", "css:finder"],
+        ["xpath=//select[@id='service_payment_period']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div[4]/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Selecione\nGratuito\nPor Hora\nPor Dia\nPor Semana\nPor Mês')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "debd9ce8-9322-4cbc-8056-171f0b51191f",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_payment_period",
+      "targets": [],
+      "value": "label=Por Hora"
+    }, {
+      "id": "5d217afc-8377-4624-bf0c-28beb6f10594",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c19fb44-586c-44f7-b090-2886a302599e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Preço",
+      "targets": [
+        ["linkText=Preço", "linkText"],
+        ["css=.sidebar-item:nth-child(2) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Preço')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/65/pricing')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Preço')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cc3ef22-f0d2-43c3-954c-4aed15d18102",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_price",
+      "targets": [
+        ["id=service_price", "id"],
+        ["name=service[price]", "name"],
+        ["css=#service_price", "css:finder"],
+        ["xpath=//input[@id='service_price']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9103a122-3b19-4335-aec3-6f68ccc2e5d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_price",
+      "targets": [
+        ["id=service_price", "id"],
+        ["name=service[price]", "name"],
+        ["css=#service_price", "css:finder"],
+        ["xpath=//input[@id='service_price']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "2ea130ce-0544-4185-879e-73c864d9c176",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50ff246d-6e91-480e-bbdb-53229f135b6a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Descrição",
+      "targets": [
+        ["linkText=Descrição", "linkText"],
+        ["css=.sidebar-item:nth-child(3) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Descrição')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/65/description')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Descrição')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6b0af46-e54c-4f70-a12d-a17eef17bef6",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_listing_name",
+      "targets": [
+        ["id=service_listing_name", "id"],
+        ["name=service[listing_name]", "name"],
+        ["css=#service_listing_name", "css:finder"],
+        ["xpath=//input[@id='service_listing_name']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5344add-0021-45c3-93a2-802155cad88a",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_listing_name",
+      "targets": [
+        ["id=service_listing_name", "id"],
+        ["name=service[listing_name]", "name"],
+        ["css=#service_listing_name", "css:finder"],
+        ["xpath=//input[@id='service_listing_name']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Pintura de cabelo em geral"
+    }, {
+      "id": "328ac454-79f5-4383-913d-1eacc23916d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_summary",
+      "targets": [
+        ["id=service_summary", "id"],
+        ["name=service[summary]", "name"],
+        ["css=#service_summary", "css:finder"],
+        ["xpath=//textarea[@id='service_summary']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb6add1c-3586-4a45-8e68-2e8c9f267d36",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_summary",
+      "targets": [
+        ["id=service_summary", "id"],
+        ["name=service[summary]", "name"],
+        ["css=#service_summary", "css:finder"],
+        ["xpath=//textarea[@id='service_summary']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Segunda a Sexta."
+    }, {
+      "id": "f898cbea-d334-44f0-9d43-d004490a8e3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cff2ea8-6028-4f07-9447-1c1c1a4117e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Localização",
+      "targets": [
+        ["linkText=Localização", "linkText"],
+        ["css=.sidebar-item:nth-child(5) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Localização')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/65/location')]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Localização')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5223e6af-122d-4bdb-b257-e38984d060d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_address",
+      "targets": [
+        ["id=service_address", "id"],
+        ["name=service[address]", "name"],
+        ["css=#service_address", "css:finder"],
+        ["xpath=//input[@id='service_address']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce4d247f-2873-4613-9d22-7ee544066164",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_address",
+      "targets": [
+        ["id=service_address", "id"],
+        ["name=service[address]", "name"],
+        ["css=#service_address", "css:finder"],
+        ["xpath=//input[@id='service_address']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Rua algum lugar, 255"
+    }, {
+      "id": "1161c8e1-963f-4f45-9a97-6652977086a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "552b805c-d809-4201-823e-bb355198d5aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Detalhes",
+      "targets": [
+        ["linkText=Detalhes", "linkText"],
+        ["css=.sidebar-item:nth-child(6) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Detalhes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/65/amenities')]", "xpath:href"],
+        ["xpath=//div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Detalhes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14e90a5d-2d43-481f-bea7-cc7e2b79f0d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_is_legal_person",
+      "targets": [
+        ["id=service_is_legal_person", "id"],
+        ["css=#service_is_legal_person", "css:finder"],
+        ["xpath=//input[@id='service_is_legal_person']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fedc45f4-c065-4a21-b6b1-7c0fef723330",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_65']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e97ccd4-20b5-460d-baf5-c85626edfe51",
+      "comment": "",
+      "command": "click",
+      "target": "id=unpublish_button",
+      "targets": [
+        ["id=unpublish_button", "id"],
+        ["css=#unpublish_button", "css:finder"],
+        ["xpath=//input[@id='unpublish_button']", "xpath:attributes"],
+        ["xpath=(//form[@id='edit_service_65']/input[5])[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5c18073-018e-448b-8237-827cd4b59ac9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toast-message",
+      "targets": [
+        ["css=.toast-message", "css:finder"],
+        ["xpath=//div[@id='toast-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7ecc9ef-69cb-4798-9203-061d286bf11d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c1f2c81e-800e-4d50-9a29-453a5fd544ae",
+    "name": "publicar_servico_com_sucesso",
+    "commands": [{
+      "id": "914331fa-ac2e-4780-98bc-503ac0f50cb6",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1f2799e-310c-4016-8720-a03345dfa4a3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b319cf7e-5dfc-4678-9327-f80e2dc951ae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crie seu Anúncio",
+      "targets": [
+        ["linkText=Crie seu Anúncio", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='navbar']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/services/new')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Crie seu Anúncio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5d9644c-7c48-48ad-970d-b45c8fffea97",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_service_category",
+      "targets": [
+        ["id=service_service_category", "id"],
+        ["name=service[service_category]", "name"],
+        ["css=#service_service_category", "css:finder"],
+        ["xpath=//select[@id='service_service_category']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1566f77d-cb53-4d13-a970-f3d1a2229d60",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_service_category",
+      "targets": [],
+      "value": "label=Casa"
+    }, {
+      "id": "8bbe263b-8e73-469f-974d-aa42407dd36f",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_service_type",
+      "targets": [
+        ["id=service_service_type", "id"],
+        ["name=service[service_type]", "name"],
+        ["css=#service_service_type", "css:finder"],
+        ["xpath=//select[@id='service_service_type']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Selecione\nCabeleireira\nFaxineira\nEnfermeira\nProfessor\nGuia Turístico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b541ec18-1beb-4b8d-acc8-3049808918b1",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_service_type",
+      "targets": [],
+      "value": "label=Cabeleireira"
+    }, {
+      "id": "25bcb0b8-54f1-44ee-9ae6-afbaa7e12d6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_service_mode",
+      "targets": [
+        ["id=service_service_mode", "id"],
+        ["name=service[service_mode]", "name"],
+        ["css=#service_service_mode", "css:finder"],
+        ["xpath=//select[@id='service_service_mode']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Selecione\nEm Domicílio\nNo Estabelecimento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81bcfa2e-08a4-4dec-a3a1-4821ece12df3",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_service_mode",
+      "targets": [],
+      "value": "label=Em Domicílio"
+    }, {
+      "id": "a12f3dc1-64be-44e1-ae33-ff4a833a09e3",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_payment_period",
+      "targets": [
+        ["id=service_payment_period", "id"],
+        ["name=service[payment_period]", "name"],
+        ["css=#service_payment_period", "css:finder"],
+        ["xpath=//select[@id='service_payment_period']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div/div[4]/div/select", "xpath:idRelative"],
+        ["xpath=//div[4]/div/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Selecione\nGratuito\nPor Hora\nPor Dia\nPor Semana\nPor Mês')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a0cc023-0c29-4aeb-8753-f60f721f61a2",
+      "comment": "",
+      "command": "select",
+      "target": "id=service_payment_period",
+      "targets": [],
+      "value": "label=Por Hora"
+    }, {
+      "id": "ee2502c1-db40-48b9-a735-3950ba13424a",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_service']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5025f0fd-7a15-424d-ab16-ac17a49ad1d2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Preço",
+      "targets": [
+        ["linkText=Preço", "linkText"],
+        ["css=.sidebar-item:nth-child(2) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Preço')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/58/pricing')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Preço')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9dc6638-b0ca-412b-87c4-fb13a925e5ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_price",
+      "targets": [
+        ["id=service_price", "id"],
+        ["name=service[price]", "name"],
+        ["css=#service_price", "css:finder"],
+        ["xpath=//input[@id='service_price']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3d05168-a43c-4525-871c-d271cdcff83c",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_price",
+      "targets": [
+        ["id=service_price", "id"],
+        ["name=service[price]", "name"],
+        ["css=#service_price", "css:finder"],
+        ["xpath=//input[@id='service_price']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "150"
+    }, {
+      "id": "6678263a-5b4e-4674-8b74-8fbb8f55d662",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "114889ca-a6e5-43d6-b894-fe2b8d6128bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Detalhes",
+      "targets": [
+        ["linkText=Detalhes", "linkText"],
+        ["css=.sidebar-item:nth-child(6) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Detalhes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/58/amenities')]", "xpath:href"],
+        ["xpath=//div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Detalhes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55915584-ac0b-49fd-a8de-26cfe9530926",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_is_legal_person",
+      "targets": [
+        ["id=service_is_legal_person", "id"],
+        ["css=#service_is_legal_person", "css:finder"],
+        ["xpath=//input[@id='service_is_legal_person']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdcae519-c347-4ae1-87ac-eaa763359fe8",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_is_independent",
+      "targets": [
+        ["id=service_is_independent", "id"],
+        ["css=#service_is_independent", "css:finder"],
+        ["xpath=//input[@id='service_is_independent']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db5d7a85-886e-4e8d-9795-2f5110336cb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e956703-3f8b-482c-aed6-fc44e43a4b24",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Descrição",
+      "targets": [
+        ["linkText=Descrição", "linkText"],
+        ["css=.sidebar-item:nth-child(3) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Descrição')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/58/description')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Descrição')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cbc2d67-ef48-46b3-a8d3-e43c85b86f58",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_listing_name",
+      "targets": [
+        ["id=service_listing_name", "id"],
+        ["name=service[listing_name]", "name"],
+        ["css=#service_listing_name", "css:finder"],
+        ["xpath=//input[@id='service_listing_name']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5f916ff-fba1-4599-95cb-c7cb9f7af644",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_listing_name",
+      "targets": [
+        ["id=service_listing_name", "id"],
+        ["name=service[listing_name]", "name"],
+        ["css=#service_listing_name", "css:finder"],
+        ["xpath=//input[@id='service_listing_name']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Corto cabelo em casa"
+    }, {
+      "id": "a769e84e-7d56-473e-beec-822f64227718",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_summary",
+      "targets": [
+        ["id=service_summary", "id"],
+        ["name=service[summary]", "name"],
+        ["css=#service_summary", "css:finder"],
+        ["xpath=//textarea[@id='service_summary']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40e64c30-33f6-4344-965c-7b0efdc4687a",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_summary",
+      "targets": [
+        ["id=service_summary", "id"],
+        ["name=service[summary]", "name"],
+        ["css=#service_summary", "css:finder"],
+        ["xpath=//textarea[@id='service_summary']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Corto cabelo a mais de 5 anos."
+    }, {
+      "id": "8f6207cc-5483-4402-93f0-13a2fa9323d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20f12235-b6ec-4742-b96e-e1349a4e3d48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Localização",
+      "targets": [
+        ["linkText=Localização", "linkText"],
+        ["css=.sidebar-item:nth-child(5) > .sidebar-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Localização')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/services/58/location')]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Localização')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0149308-0688-4af3-87a9-f5c1b4cf8cde",
+      "comment": "",
+      "command": "click",
+      "target": "id=service_address",
+      "targets": [
+        ["id=service_address", "id"],
+        ["name=service[address]", "name"],
+        ["css=#service_address", "css:finder"],
+        ["xpath=//input[@id='service_address']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28799ddb-9bb8-4ed6-8b4f-d573ec3090d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=service_address",
+      "targets": [
+        ["id=service_address", "id"],
+        ["name=service[address]", "name"],
+        ["css=#service_address", "css:finder"],
+        ["xpath=//input[@id='service_address']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Rua algum lugar, 756"
+    }, {
+      "id": "351a1eb5-5af6-46e5-9e42-994704910dcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-form",
+      "targets": [
+        ["css=.btn-form", "css:finder"],
+        ["xpath=(//input[@name='commit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dfa740f-84e5-4c3a-8798-33f4ffd8badd",
+      "comment": "",
+      "command": "click",
+      "target": "id=publish_button",
+      "targets": [
+        ["id=publish_button", "id"],
+        ["name=commit", "name"],
+        ["css=#publish_button", "css:finder"],
+        ["xpath=//input[@id='publish_button']", "xpath:attributes"],
+        ["xpath=//form[@id='edit_service_58']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "668ea2d8-fae6-4303-82b3-3b54454e688b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toast-message",
+      "targets": [
+        ["css=.toast-message", "css:finder"],
+        ["xpath=//div[@id='toast-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff66902b-4381-467c-a632-7530c458417d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.toast",
+      "targets": [
+        ["css=.toast", "css:finder"],
+        ["xpath=//div[@id='toast-container']/div", "xpath:idRelative"],
+        ["xpath=//body/div/div", "xpath:position"]
+      ],
+      "value": "Serviço alterado com sucesso."
+    }, {
+      "id": "7bf113c7-3569-4746-b0c3-92a5c81ab3a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel-heading img",
+      "targets": [
+        ["css=.panel-heading img", "css:finder"],
+        ["xpath=//img[@alt='Logo 04 mn']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52fd619d-bb30-4751-a8ae-821d1538a2b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a847d561-edcf-485d-bb62-c425906c8c89",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Corto cabelo em casa"
+    }, {
+      "id": "451c94c7-2a75-4aac-8019-22c3e44256cf",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e97f9387-be9a-46e5-9fb9-469e2e1e4a4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(43) .panel-body",
+      "targets": [
+        ["css=.col-md-4:nth-child(43) .panel-body", "css:finder"],
+        ["xpath=//div[@id='service_listing']/div[22]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[22]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "778f28be-5a31-489a-94d7-7de1268f7e83",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Faxina (diarista)",
+      "targets": [
+        ["linkText=Faxina (diarista)", "linkText"],
+        ["css=.col-md-4:nth-child(43) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Faxina (diarista)')]", "xpath:link"],
+        ["xpath=//div[@id='service_listing']/div[22]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/services/57')]", "xpath:href"],
+        ["xpath=//div[22]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Faxina (diarista)')]", "xpath:innerText"]
+      ],
+      "value": "Faxina (diarista)"
+    }, {
+      "id": "4ab1de4e-0ffb-47eb-8920-cce54a9ed412",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f97f1404-081b-46f4-9016-0bc547514192",
+    "name": "sair_do_sistema_com_sucesso",
+    "commands": [{
+      "id": "2b2a224f-f8a3-4860-b15f-0c538bd91222",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3faca74a-8b91-4928-bcbd-0dfe50c57de4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38b2ea2c-25a0-4396-a42f-4bacc531ca08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.img-circle",
+      "targets": [
+        ["css=.img-circle", "css:finder"],
+        ["xpath=//img[@alt='Cee83551b697843eb76a2f3622fba2fc']", "xpath:img"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a/img", "xpath:idRelative"],
+        ["xpath=//li[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef91731c-5cd3-40e3-b201-e8d702d781a1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=li:nth-child(14) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/ul/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_out')]", "xpath:href"],
+        ["xpath=//li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b4e1166-4176-42c6-b36a-18c58574bb68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toast-message",
+      "targets": [
+        ["css=.toast-message", "css:finder"],
+        ["xpath=//div[@id='toast-container']/div/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9786892-d12d-4307-b635-712e06b45aff",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8e1d9519-f5f4-4197-83db-a087e5de854c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://ultima.school/", "http://www.buscacep.correios.com.br/", "http://publicazo.insprak.com/"],
+  "plugins": []
+}
