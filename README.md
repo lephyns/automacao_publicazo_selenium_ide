@@ -11,7 +11,7 @@ Os casos de teste estão dentro da pasta feature.
 
 # Como executar o projeto 📌
 
-**Passo 1:** Instalar extenção Selenium IDE<br>
+**Passo 1:** nstalar extenção Selenium IDE<br>
 Para executar o projeto é necessário ter a extenção do **Selenium IDE** instalada no navegador. Link para download pelo <a href="https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd?hl=pt-BR">Chrome<a/>.
 
 **Passo 2:** executar os testes do projeto<br>
@@ -22,12 +22,12 @@ Para executar os testes do projeto basta clicar na extenção do Selenium instal
 # Recursos do Selenium IDE 💡
 Existem vários recursos fornecidos no IDE:
 
-* Controle de Velocidade: ajuda a controlar a velocidade dos casos de teste.
-* Run All: permite a execução de todos os testes do projeto.
-* Executar: executa o teste selecionado.
-* Pausar/Retomar: pausa e retoma um caso de teste.
-* Etapa: exibe cada comando específico no script de teste.
-* Rollup: agrupa todos os Comandos Selenese e fazê-los executar como uma única operação.
+* **Controle de Velocidade:** ajuda a controlar a velocidade dos casos de teste.
+* **Run All:** permite a execução de todos os testes do projeto.
+* **Executar:** executa o teste selecionado.
+* **Pausar/Retomar:** pausa e retoma um caso de teste.
+* **Etapa:** exibe cada comando específico no script de teste.
+* **Rollup:** agrupa todos os Comandos Selenese e fazê-los executar como uma única operação.
 
 # Comandos do Selenium ✨
 Os comandos são categorizados em três tipos:
